@@ -8,26 +8,23 @@
   </head>
 
   <body>
-    <!-- 横幅は80%、高さは100vh、横マージンはauto -->
-    <div class="flex-col w-full h-screen mx-auto sm:w-4/5">
-      <!-- 高さは100vhの1/6 -->
-      <div class=" bg-green-400 h-1/6">
-        <div>
-          <button class="visible bg-yellow-200 w-14 h-14 sm:invisible peer-focus:invisible">
-            ボタン
-          </button>
-          <div class="absolute invisible w-3/4 h-full bg-purple-300 peer-focus:visible"></div>
-        </div>
-      </div>
+    <div class="w-4/5 h-screen mx-auto bg-red-200">
 
-      <div class="flex flex-row h-5/6 bg-blue-50">
-        <div class="invisible w-0 sm:visible sm:bg-blue-200 sm:w-1/5">
-          <p>サイド</p>
+
+        <div class="flex flex-row w-full py-5 h-1/6">
+            <button class="absolute visible w-10 h-10 bg-green-700 sm:w-0 sm:h-0 peer sm:invisible">button</button>
+            <div class="w-full text-center bg-green-100 border-2 border-gray-400 rounded shadow-md">header</div>
+            <div class="absolute invisible w-0 bg-cyan-300 peer-focus:visible peer-focus:h-screen peer-focus:w-1/6">kore
+            </div>
         </div>
-        <div class="w-full h-full bg-red-400 sm:w-4/5">
-          <p>メイン</p>
+
+        <div class="flex flex-row w-full h-5/6 ">
+            <div class="w-0 h-auto bg-yellow-100 sm:w-1/6 peer-focus:w-1/6">aside</div>
+
+            <div class="w-full h-auto bg-blue-50 sm:w-5/6">main</div>
         </div>
-      </div>
+
+
     </div>
-  </body>
+</body>
 </html>
